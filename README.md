@@ -8,7 +8,7 @@
 to show one approach of using some of the best practices in Android Development and Clean Architecture. Including:
  * ViewModel
  * LiveData
- * Hilt (for dependency injection)
+ * Hilt (for dependency injection and Testing )
  * Kotlin Coroutines
  * Flows
  * Retrofit
