@@ -2,7 +2,6 @@ package com.kys.daggerhiltnytimes.framework.datasource.cache.model
 
 import androidx.room.*
 import com.google.gson.Gson
-import com.google.gson.annotations.Expose
 import com.google.gson.reflect.TypeToken
 
 @TypeConverters(RequestConverter::class)

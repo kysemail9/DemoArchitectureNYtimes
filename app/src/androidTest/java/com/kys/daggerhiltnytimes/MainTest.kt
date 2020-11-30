@@ -3,6 +3,7 @@ package com.kys.daggerhiltnytimes
 import androidx.test.core.app.launchActivity
 import androidx.test.espresso.matcher.ViewMatchers.assertThat
 import com.kys.daggerhiltnytimes.di.ProductionModule
+import com.kys.daggerhiltnytimes.framework.presentation.DetailFragment
 import com.kys.daggerhiltnytimes.framework.presentation.MainActivity
 import com.kys.daggerhiltnytimes.framework.presentation.MainFragment
 import com.kys.daggerhiltnytimes.framework.presentation.MainFragmentFactory
@@ -11,6 +12,7 @@ import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.components.ApplicationComponent
+import dagger.hilt.android.testing.BindValue
 import dagger.hilt.android.testing.HiltAndroidRule
 import dagger.hilt.android.testing.HiltAndroidTest
 import dagger.hilt.android.testing.UninstallModules
@@ -35,7 +37,9 @@ class MainTest {
 
     @Inject
     lateinit var fragmentFactory: MainFragmentFactory
-    //@BindValue var myString: String = "gggf" // Doesn't work?? I'm prob doing it wrong.
+
+    //@BindValue
+    //var myString: String = "gggf" // Doesn't work?? I'm prob doing it wrong.
 
     @Before
     fun init() {

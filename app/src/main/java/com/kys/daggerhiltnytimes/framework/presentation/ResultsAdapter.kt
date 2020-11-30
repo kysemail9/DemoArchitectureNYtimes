@@ -60,10 +60,7 @@ class ResultsViewHolder(
             """${item.section}"""//"""${item.section} - ${item.subsection}"""
 
         if (!item.media.isNullOrEmpty()) {
-            Glide.with(itemBinding.root)
-                .load(item.media[0].media_metadata[0].url)
-                .transform(CircleCrop())
-                .into(itemBinding.ivStandard)
+            Glide.with(itemBinding.root).load(item.media[0].media_metadata[0].url).transform(CircleCrop()).into(itemBinding.ivStandard)
 
             Log.e(
                 "Adapter",
@@ -78,10 +75,7 @@ class ResultsViewHolder(
                 "Adapter",
                 "Else For index : " + adapterPosition + " --> title : " + item.title
             )
-            Glide.with(itemBinding.root)
-                .load(R.drawable.ic_image_default)
-                .transform(CircleCrop())
-                .into(itemBinding.ivStandard)
+            Glide.with(itemBinding.root).load(R.drawable.ic_image_default).transform(CircleCrop()).into(itemBinding.ivStandard)
         }
     }
 

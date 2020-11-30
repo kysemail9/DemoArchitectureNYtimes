@@ -69,7 +69,7 @@ inline fun <reified T : Fragment> launchFragmentInHiltContainer(
         activity.supportFragmentManager
             .beginTransaction()
             .add(android.R.id.content, fragment, "")
-            .commit()
+            .commitNow() // commit
 
         fragment.action()
     }

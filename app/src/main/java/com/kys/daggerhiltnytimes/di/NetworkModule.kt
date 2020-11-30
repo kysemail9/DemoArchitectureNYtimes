@@ -1,21 +1,19 @@
 package com.kys.daggerhiltnytimes.di
 
+import com.google.gson.Gson
+import com.google.gson.GsonBuilder
 import com.kys.daggerhiltnytimes.business.data.network.NetworkDataSource
 import com.kys.daggerhiltnytimes.business.data.network.NetworkDataSourceImpl
 import com.kys.daggerhiltnytimes.framework.datasource.network.ResultRetrofitService
 import com.kys.daggerhiltnytimes.framework.datasource.network.ResultRetrofitServiceImpl
 import com.kys.daggerhiltnytimes.framework.datasource.network.mappers.NetworkMapper
 import com.kys.daggerhiltnytimes.framework.datasource.network.retrofit.ResultRetrofit
-import com.google.gson.Gson
-import com.google.gson.GsonBuilder
-import com.kys.daggerhiltnytimes.utils.EmptyArrayConverterFactory
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.components.ApplicationComponent
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import retrofit2.converter.moshi.MoshiConverterFactory
 import javax.inject.Singleton
 
 @Module

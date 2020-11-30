@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.text.TextUtils
 import android.util.Log
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
@@ -38,7 +39,9 @@ constructor(
         initRecyclerView()
         subscribeObservers()
         viewModel.setStateEvent(GetResultsEvent)
+
         navController = Navigation.findNavController(view)
+
         Log.d(TAG, "MainFragment: ${someString}")
     }
 

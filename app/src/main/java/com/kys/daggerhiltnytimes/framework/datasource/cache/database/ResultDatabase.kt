@@ -4,7 +4,7 @@ import androidx.room.Database
 import androidx.room.RoomDatabase
 import com.kys.daggerhiltnytimes.framework.datasource.cache.model.ResultCacheEntity
 
-@Database(entities = [ResultCacheEntity::class ], version = 4)
+@Database(entities = [ResultCacheEntity::class ], version = 4,  exportSchema = false)
 abstract class ResultDatabase: RoomDatabase() {
 
     abstract fun resultDao(): ResultDao

@@ -6,7 +6,7 @@ buildscript {
         google()
         jcenter()
         mavenCentral()
-        
+        maven { url 'https://maven.google.com' }
     }
     dependencies {
         def hilt_version = "2.28-alpha"
@@ -22,7 +22,7 @@ allprojects {
     repositories {
         google()
         jcenter()
-        
+        maven { url 'https://maven.google.com' }
     }
 }
 

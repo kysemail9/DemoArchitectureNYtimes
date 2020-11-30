@@ -14,8 +14,6 @@ constructor(
     private val networkDataSource: NetworkDataSource
 ) {
 
-    private val TAG: String = "AppDebug"
-
     /**
      * Show loading
      * 1. Get results from network
